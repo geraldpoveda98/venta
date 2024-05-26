@@ -1,1 +1,2 @@
-# guia de usuario basicas
+# guia de basicas
+# Modificado desde mi lenovo
