@@ -1,2 +1,1 @@
-# venta
-# venta
+# guia de usuario basicas
