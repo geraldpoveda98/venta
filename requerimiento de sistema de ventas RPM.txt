@@ -1,0 +1,9 @@
+corregir el rol especial por bodega
+aopartado para la cotiza
+realizar formato para la factura
+apartado de finalizacion de credito mostrar las facturas ya vencidas aplazo de credito
+incrementar el porcenta al producto cuando la factura es credito
+que se pueda editar el consecutivo de factura
+Que en bodega no ingrese precio y no lo visualice al momento de ingresar el producto que solo lo haga el administrador
+
+
