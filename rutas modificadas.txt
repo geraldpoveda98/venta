@@ -1,0 +1,73 @@
+C:\xampp\htdocs\ventas\extensiones\tcpdf\pdf
+dominio comprado
+repmedina.INFO
+
+falta subir ciertas carpetas apartir del contenido de las vistas
+
+1)	corregir el precio a signo de cordoba en ves de dolar entodas las vistas+ es una imagen svg con el siguiente codigo(<i class="ion ion-social-usd">)
+C:\xampp\htdocs\ventas\vistas\bower_components\Ionicons\src		class="ion ion-social-usd"
+codigo en php para darle un color negrita a una letra y que se vea un poco mas grande
+<span style='font-size: 1.3em;'><b>C</b></span>
+
+codigo en javascrip para darle un color negrita a una letra y que se vea un poco mas grande
+
+var letra = document.getElementById("miLetra");
+	letra.style.color = "black";
+    letra.style.fontWeight = "bold";
+    letra.style.fontSize = "1.2em";
+<span id="miLetra">C</span>
+
+
+2)	Eliminar el error queda al momento de guardar la venta
+se elimino el print en venta.controlador
+
+
+
+3)	eliminar la opcion de imprimir en xml en la vista Administrar ventas
+ <a class="btn btn-success" href="index.php?ruta=ventas&xml='.$value["codigo"].'">xml</a> se quito este codigo en la ventana ventas php y se comento en el controlador
+
+
+4) corregir que la identificacion o cedula se pueda ingresar valores alfanumericos
+listo, se agrego esta linea en todos las ENTRADA PARA EL DOCUMENTO ID
+<input type="text" class="form-control input-lg" name="nuevoDocumentoId" placeholder="Ingresar documento" required>
+y en el controlador se agrego la linea [a-zA-Z0-9ñÑáéíóúÁÉÍÓÚ\-\. ] para que leyera guiones en el controlador de clientes
+la base de dato se modifico a string
+
+
+5) Corregir el impuesto que se pueda agregar en 0 u otro valor o de 0% al 15%
+Se puso condicional de 0 al 15%
+class="form-control input-lg" min="0" && max="15" id="nuevoImpuestoVenta" name="nuevoImpuestoVenta" placeholder="0" required>
+Masaya123$
+
+
+
+6) corregir precio en productos
+Se realizo desde el archivo ajax se ingreso antes el signo C$, ruta> C:\xampp\htdocs\ventas\ajax
+en datatable-productos
+
+coregir Fecha
+<input type="text" class="form-control input-lg" name="nuevaFechaNacimiento" placeholder="Ingresar fecha nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required
+yyyy/mm/dd
+
+
+7) corregir la entrada del telefono del cliente al momento de registrar
+listo se modifico la linea de codigo a text y se le quito un minimo se agrego un espacio mas esto se hizo desde las vistas crear ventas y clientes
+<input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar teléfono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
+esto se hizo en la entrada de agregar telefono
+
+
+
+8) corregir la entrada de codigos del producto que no se repita
+
+
+9) corregir el filtro de los precios y ordenar de mayor a menor o biseversa
+
+
+10) CORREGIR los colores de escases de producto, actualmente esta <= a 10 se pone en rojo, si pongo 11 se pone en verde, y si pongo de 12 a 15 en naranja mayor o igual a 16 ya es verde
+
+
+
+
+
+social-usd
+social-usd-outline
