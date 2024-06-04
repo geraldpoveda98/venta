@@ -122,11 +122,11 @@
 
                   <!-- Precio del producto -->
 
-                  <div class="col-xs-3" style="padding-left:0px">
+                   <div class="col-xs-3" style="padding-left:0px">
 
                     <div class="input-group">
 
-                      <span class="input-group-addon"><i class="ion ion-social-usd"></i></span>
+                      <span class="input-group-addon"><span style='font-size: 1.3em;'><b>C</b></span><i class="ion ion-social-usd"></i></span>
                          
                       <input type="number" min="1" class="form-control" id="nuevoPrecioProducto" name="nuevoPrecioProducto" placeholder="000000" readonly required>
          
