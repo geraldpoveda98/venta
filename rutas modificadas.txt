@@ -6,7 +6,7 @@ falta subir ciertas carpetas apartir del contenido de las vistas
 
 1)	corregir el precio a signo de cordoba en ves de dolar entodas las vistas+ es una imagen svg con el siguiente codigo(<i class="ion ion-social-usd">)
 C:\xampp\htdocs\ventas\vistas\bower_components\Ionicons\src		class="ion ion-social-usd"
-codigo en php para darle un color negrita a una letra y que se vea un poco mas grande
+codigo en php para darle un color negrita a una letra y que se vea un poco mas grande, buscar el codigo en la ruta js la mayoria estan en las vistas
 <span style='font-size: 1.3em;'><b>C</b></span>
 
 codigo en javascrip para darle un color negrita a una letra y que se vea un poco mas grande

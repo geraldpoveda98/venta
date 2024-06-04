@@ -33,8 +33,7 @@ $totalProductos = count($productos);
     
     <div class="icon">
       
-      <i class="ion ion-social-usd"></i>
-    
+    <span style='font-size: 1.3em;'><b>C</b></span><i class="ion ion-social-usd"></i>
     </div>
     
     <a href="ventas" class="small-box-footer">
