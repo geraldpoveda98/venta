@@ -4,9 +4,9 @@
     
     <h1>
       
-      Tablero
+      Inicio
       
-      <small>Panel de Control</small>
+      <small>Control</small>
     
     </h1>
 
@@ -14,7 +14,7 @@
       
       <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
       
-      <li class="active">Tablero</li>
+      <li class="active">Inicio</li>
     
     </ol>
 

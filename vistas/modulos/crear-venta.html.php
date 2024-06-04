@@ -184,7 +184,7 @@
                            
                             <span class="input-group-addon"><span style='font-size: 1.3em;'><b>C</b></span><i class="ion ion-social-usd"></i></span>
 
-                              <input type="number" min="1" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" placeholder="00000" readonly required>
+                              <input type="number" min="1" class="form-control" id="nuevoTotalVenta" name="nuevoTotalVenta" placeholder="C$00000" readonly required>
                               
                         
                             </div>
@@ -289,7 +289,7 @@
                   <td>1.</td>                 
                   <td><img src="vistas/img/productos/default/anonymous.png" class="img-thumbnail" width="40px"></td>
                   <td>00123</td>
-                  <td>Lorem ipsum dolor sit amet</td>       
+                  <td></td>       
                   <td>20</td>                 
                   <td>                 
                     <div class="btn-group">
