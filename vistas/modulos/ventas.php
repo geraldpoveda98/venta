@@ -12,15 +12,12 @@ if($_SESSION["perfil"] == "Especial"){
 
 }
 
-$xml = ControladorVentas::ctrDescargarXML();
-
-if($xml){
-
-  rename($_GET["xml"].".xml", "xml/".$_GET["xml"].".xml");
-
-  echo '<a class="btn btn-block btn-success abrirXML" archivo="xml/'.$_GET["xml"].'.xml" href="ventas">Se ha creado correctamente el archivo XML <span class="fa fa-times pull-right"></span></a>';
-
-}
+   /* opcion si se desea imprimir a xml 
+   $xml = ControladorVentas::ctrDescargarXML();
+    if($xml){
+      rename($_GET["xml"].".xml", "xml/".$_GET["xml"].".xml");
+      echo '<a class="btn btn-block btn-success abrirXML" archivo="xml/'.$_GET["xml"].'.xml" href="ventas">Se ha creado correctamente el archivo XML <span class="fa fa-times pull-right"></span></a>';
+    } */
 
 ?>
 <div class="content-wrapper">
@@ -159,11 +156,11 @@ if($xml){
 
                     <div class="btn-group">
 
-                      <a class="btn btn-success" href="index.php?ruta=ventas&xml='.$value["codigo"].'">xml</a>
+                    <!-- <a class="btn btn-success" href="index.php?ruta=ventas&xml='.$value["codigo"].'">xml</a>  se comento esto es para el boton xml -->
                         
                       <button class="btn btn-info btnImprimirFactura" codigoVenta="'.$value["codigo"].'">
 
-                        <i class="fa fa-print"></i>
+                        <i class="fa fa-print"></i> 
 
                       </button>';
 

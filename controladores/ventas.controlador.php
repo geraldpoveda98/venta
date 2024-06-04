@@ -1,9 +1,9 @@
 <?php
 
-use Mike42\Escpos\Printer;
+/*use Mike42\Escpos\Printer;
 use Mike42\Escpos\EscposImage;
 use Mike42\Escpos\PrintConnectors\FilePrintConnector;
-use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;
+use Mike42\Escpos\PrintConnectors\WindowsPrintConnector;*/
 
 class ControladorVentas{
 
@@ -138,7 +138,7 @@ class ControladorVentas{
 
 				// $imprimir -> close();
 
-				$impresora = "epson20";
+			 	/*$impresora = "epson20";
 
 				$conector = new WindowsPrintConnector($impresora);
 
@@ -148,7 +148,7 @@ class ControladorVentas{
 
 				$printer -> text(date("Y-m-d H:i:s")."\n");//Fecha de la factura
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/
+				$printer -> feed(1); //Alimentamos el papel 1 vez
 
 				$printer -> text("Inventory System"."\n");//Nombre de la empresa
 
@@ -160,7 +160,7 @@ class ControladorVentas{
 
 				$printer -> text("FACTURA N.".$_POST["nuevaVenta"]."\n");//Número de factura
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/
+				$printer -> feed(1); //Alimentamos el papel 1 vez
 
 				$printer -> text("Cliente: ".$traerCliente["nombre"]."\n");//Nombre del cliente
 
@@ -172,7 +172,7 @@ class ControladorVentas{
 
 				$printer -> text("Vendedor: ".$traerVendedor["nombre"]."\n");//Nombre del vendedor
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/
+				$printer -> feed(1); //Alimentamos el papel 1 vez
 
 				foreach ($listaProductos as $key => $value) {
 
@@ -186,7 +186,7 @@ class ControladorVentas{
 
 				}
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/			
+				$printer -> feed(1); //Alimentamos el papel 1 vez			
 				
 				$printer->text("NETO: $ ".number_format($_POST["nuevoPrecioNeto"],2)."\n"); //ahora va el neto
 
@@ -196,17 +196,17 @@ class ControladorVentas{
 
 				$printer->text("TOTAL: $ ".number_format($_POST["totalVenta"],2)."\n"); //ahora va el total
 
-				$printer -> feed(1); //Alimentamos el papel 1 vez*/	
+				$printer -> feed(1); //Alimentamos el papel 1 vez	
 
 				$printer->text("Muchas gracias por su compra"); //Podemos poner también un pie de página
 
-				$printer -> feed(3); //Alimentamos el papel 3 veces*/
+				$printer -> feed(3); //Alimentamos el papel 3 veces
 
 				$printer -> cut(); //Cortamos el papel, si la impresora tiene la opción
 
 				$printer -> pulse(); //Por medio de la impresora mandamos un pulso, es útil cuando hay cajón moneder
 
-				$printer -> close();
+				$printer -> close(); */
 
 	
 				echo'<script>

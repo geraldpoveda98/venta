@@ -2,13 +2,20 @@
 
 <div class="login-box">
   
-  <div class="login-logo">
+ <!--<div class="login-logo">
 
-    <img src="vistas/img/plantilla/logo-blanco-bloque.png" class="img-responsive" style="padding:30px 100px 0px 100px">
+     <img src="vistas/img/plantilla/logo-blanco-bloque.png" class="img-responsive" style="padding:30px 100px 0px 100px">
 
-  </div>
+  </div> -->
+
+
 
   <div class="login-box-body">
+  <div class="login-logo">
+
+<img src="vistas/img/plantilla/logo-negro-bloque.png" class="img-responsive" style="padding:30px 100px 0px 100px">
+
+</div>
 
     <p class="login-box-msg">Ingresar al sistema</p>
 
